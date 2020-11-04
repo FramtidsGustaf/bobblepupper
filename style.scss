@@ -9,12 +9,29 @@ $smallTextAndBgColor: #1e1e24;
 body {
   overflow: hidden;
 }
+#endScreen {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  background-color: $smallTextAndBgColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fredoka One", cursive;
+  color: $bigTextColor;
+  font-size: 8vw;
+  user-select: none;
+  z-index: -1;
+}
 #playField {
   height: 100vh;
   background-color: $smallTextAndBgColor;
   display: grid;
   grid-template-columns: 1fr 50% 1fr;
   grid-template-rows: 25vh 50vh 25vh;
+  overflow: hidden;
   h2 {
     grid-column: 2;
     justify-self: center;

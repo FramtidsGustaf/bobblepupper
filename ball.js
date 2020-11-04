@@ -10,6 +10,7 @@ class Ball {
     let rndSpeed = Math.floor(Math.random() * 20) + 5;
     let rndTop = Math.floor(Math.random() * 70) + 10;
     let rndColor = Math.floor(Math.random() * 5);
+    let isClicked = false;
     ball.style.height = `${rnd}px`;
     ball.style.width = `${rnd}px`;
     ball.style.borderRadius = `50%`;
@@ -27,11 +28,14 @@ class Ball {
       if (e.target === ball) {
         ball.remove();
         this.explosion.explode(e.clientX, e.clientY);
+        isClicked = true;
       }
     });
     setTimeout(() => {
-      ball.remove();
+      if (!isClicked) {
+        ball.remove();
+        playField.remove();
+      }
     }, rndSpeed * 1000);
   }
 }
-Ö;
