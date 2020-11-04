@@ -1,4 +1,4 @@
-class Ball {
+/*class Ball {
   constructor() {
     this.explosion = new Explosion();
   }
