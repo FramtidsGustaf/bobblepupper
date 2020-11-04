@@ -11,6 +11,7 @@ body {
 #top {
   height: 100vh;
   background-color: #1e1e24;
+  overflow: hidden;
 }
 
 .particle {

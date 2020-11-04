@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         element.style.height = "0px";
         element.style.width = "0px";
-      }, 300);
+      }, 175);
 
       setTimeout(() => {
         element.remove();
-      }, 400);
+      }, 275);
 
       top.appendChild(element);
     }
