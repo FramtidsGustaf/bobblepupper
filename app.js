@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
       element.style.left = `${e.clientX}px`;
 
       setTimeout(() => {
-        rnd1 = Math.floor(Math.random() * 1000) + 1;
+        rnd1 = Math.floor(Math.random() * 100) + 1;
         rnd1 *= Math.round(Math.random()) ? 1 : -1;
-        rnd2 = Math.floor(Math.random() * 1000) + 1;
+        rnd2 = Math.floor(Math.random() * 100) + 1;
         rnd2 *= Math.round(Math.random()) ? 1 : -1;
         element.style.top = `${e.clientY + rnd1}px`;
         element.style.left = `${e.clientX + rnd2}px`;
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         element.remove();
-      }, 500);
+      }, 400);
 
       top.appendChild(element);
     }
