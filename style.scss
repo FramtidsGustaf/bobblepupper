@@ -1,3 +1,6 @@
+$bigTextColor: #90be6d;
+$smallTextAndBgColor: #1e1e24;
+
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +11,69 @@ body {
 }
 #playField {
   height: 100vh;
-  background-color: #1e1e24;
-  overflow: hidden;
+  background-color: $smallTextAndBgColor;
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  grid-template-rows: 25vh 50vh 25vh;
+  h2 {
+    grid-column: 2;
+    justify-self: center;
+    font-family: "Fredoka One", cursive;
+    font-size: 3vw;
+    transition: all 0.8s;
+    user-select: none;
+  }
+  #startScreen {
+    background-color: #d36135;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+    transition: all 0.5s;
+    h1 {
+      font-family: "Fredoka One", cursive;
+      font-size: 10vw;
+      color: $bigTextColor;
+      user-select: none;
+    }
+    p {
+      font-family: "Lekton", sans-serif;
+      font-weight: bold;
+      font-size: 100%;
+      color: $smallTextAndBgColor;
+      user-select: none;
+    }
+    #startButton {
+      font-family: "Lekton", sans-serif;
+      font-weight: bold;
+      background-color: $bigTextColor;
+      min-height: 10%;
+      min-width: 20%;
+      padding: 2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 5px;
+      color: $smallTextAndBgColor;
+      &:hover {
+        background-color: $smallTextAndBgColor;
+        color: $bigTextColor;
+      }
+    }
+  }
 }
-
 .particle {
   height: 5px;
   width: 5px;
   transition: all 0.2s;
+}
+.titleColor {
+  color: $bigTextColor;
+}
+.invisible {
+  color: transparent;
 }

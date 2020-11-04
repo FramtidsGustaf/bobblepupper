@@ -4,10 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lekton&display=swap"
+      rel="stylesheet"
+    />
     <title>Explosion</title>
   </head>
   <body>
-    <div id="playField"></div>
+    <div id="playField">
+      <h2 id="title" class="invisible">BubblePopper</h2>
+      <div id="startScreen">
+        <h1>BubblePopper</h1>
+        <p>Don't let the bubbles reach the right border! Pop them by pressing at them.</p>
+        <div id="startButton">START!</div>
+      </div>
+    </div>
     <script src="app.js"></script>
     <script src="game.js"></script>
     <script src="ball.js"></script>

@@ -11,13 +11,73 @@ body {
 #playField {
   height: 100vh;
   background-color: #1e1e24;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  grid-template-rows: 25vh 50vh 25vh;
+}
+#playField h2 {
+  grid-column: 2;
+  justify-self: center;
+  font-family: "Fredoka One", cursive;
+  font-size: 3vw;
+  transition: all 0.8s;
+  user-select: none;
+}
+#playField #startScreen {
+  background-color: #d36135;
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1%;
+  transition: all 0.5s;
+}
+#playField #startScreen h1 {
+  font-family: "Fredoka One", cursive;
+  font-size: 10vw;
+  color: #90be6d;
+  user-select: none;
+}
+#playField #startScreen p {
+  font-family: "Lekton", sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  color: #1e1e24;
+  user-select: none;
+}
+#playField #startScreen #startButton {
+  font-family: "Lekton", sans-serif;
+  font-weight: bold;
+  background-color: #90be6d;
+  min-height: 10%;
+  min-width: 20%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #1e1e24;
+}
+#playField #startScreen #startButton:hover {
+  background-color: #1e1e24;
+  color: #90be6d;
 }
 
 .particle {
   height: 5px;
   width: 5px;
   transition: all 0.2s;
+}
+
+.titleColor {
+  color: #90be6d;
+}
+
+.invisible {
+  color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
