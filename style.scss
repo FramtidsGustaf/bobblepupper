@@ -24,6 +24,9 @@ body {
   font-size: 8vw;
   user-select: none;
   z-index: -1;
+  h1 {
+    padding-left: 1%;
+  }
 }
 #playField {
   height: 100vh;

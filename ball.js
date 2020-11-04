@@ -1,6 +1,7 @@
 class Ball {
   constructor() {
     this.explosion = new Explosion();
+    this.score = new Score();
   }
   createBall() {
     let colorArray = [`#e3b505`, `#95190c`, `#610345`, `#107e7d`, `#044B7f`];
@@ -29,12 +30,14 @@ class Ball {
         ball.remove();
         this.explosion.explode(e.clientX, e.clientY);
         isClicked = true;
+        this.score.score++;
       }
     });
     setTimeout(() => {
       if (!isClicked) {
         ball.remove();
         playField.remove();
+        this.score.outPutScore();
       }
     }, rndSpeed * 1000);
   }
