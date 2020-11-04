@@ -7,21 +7,21 @@ class Ball {
     let playField = document.getElementById("playField");
     let ball = document.createElement("div");
     let rnd = Math.floor(Math.random() * 100) + 50;
-    let rndSpeed = Math.floor(Math.random() * 50) + 10;
+    let rndSpeed = Math.floor(Math.random() * 50) + 20;
     let rndTop = Math.floor(Math.random() * 500) + 70;
     let rndColor = Math.floor(Math.random() * 5);
     ball.style.height = `${rnd}px`;
     ball.style.width = `${rnd}px`;
-    ball.style.top = `${rndTop}px`;
     ball.style.borderRadius = `50%`;
     ball.style.backgroundColor = colorArray[rndColor];
     ball.style.transition = `all ${rndSpeed}s linear`;
     ball.style.position = `absolute`;
-    ball.style.left = `-1px`;
+    ball.style.top = `${rndTop}px`;
+    ball.style.left = `1px`;
     playField.appendChild(ball);
     setTimeout(() => {
       ball.style.left = `150%`;
-    });
+    }, 1);
     document.addEventListener("click", (e) => {
       if (e.target === ball) {
         ball.remove();
