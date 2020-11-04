@@ -23,7 +23,6 @@ class Ball {
       ball.style.left = `150%`;
     });
     document.addEventListener("click", (e) => {
-      console.log(e.clientY);
       if (e.target === ball) {
         ball.remove();
         this.explosion.explode(e.clientX, e.clientY);
