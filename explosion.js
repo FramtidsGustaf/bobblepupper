@@ -1,4 +1,4 @@
-/*class Explosion {
+class Explosion {
   constructor() {}
   explode(x, y) {
     let playField = document.getElementById("playField");

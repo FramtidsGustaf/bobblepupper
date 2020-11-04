@@ -1,4 +1,4 @@
-/*class Game {
+class Game {
   constructor() {
     this.ball = new Ball();
     this.startScreen(this.autoCreatingBalls, this.ball);

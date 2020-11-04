@@ -1,4 +1,4 @@
-/*class Ball {
+class Ball {
   constructor() {
     this.explosion = new Explosion();
   }
@@ -34,3 +34,4 @@
     }, rndSpeed * 1000);
   }
 }
+Ö;
