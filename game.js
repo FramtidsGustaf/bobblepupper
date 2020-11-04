@@ -6,6 +6,6 @@ class Game {
   autoCreatingBalls(ball) {
     setInterval(() => {
       ball.createBall();
-    }, Math.floor(Math.random() * 500) + 100);
+    }, Math.floor(Math.random() * 1000) + 100);
   }
 }
