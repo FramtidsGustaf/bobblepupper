@@ -31,6 +31,7 @@ class Ball {
         this.explosion.explode(e.clientX, e.clientY);
         isClicked = true;
         this.score.score++;
+        this.score.currentScoreOutput();
       }
     });
     setTimeout(() => {
