@@ -19,17 +19,14 @@ class Game {
         start.remove();
         startButton.removeEventListener("click", difficultyIncreaser);
       }, 500);
-      setTimeout(() => {
-        autoCreatingSquares(ball);
-        setInterval(() => {
-          if (counter % 2 == 0) {
-            autoCreatingBalls(ball);
-            counter++;
-          } else {
-            autoCreatingSquares(ball);
-            counter++;
-          }
-        }, 60000);
+      setInterval(() => {
+        if (counter % 2 == 0) {
+          autoCreatingBalls(ball);
+          counter++;
+        } else {
+          autoCreatingSquares(ball);
+          counter++;
+        }
       }, 60000);
     };
 
