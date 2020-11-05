@@ -4,8 +4,6 @@ class Game {
     this.startScreen(this.autoCreatingBalls, this.autoCreatingSquares, this.ball);
   }
   startScreen(autoCreatingBalls, autoCreatingSquares, ball) {
-    let body = document.getElementsByTagName("body")[0];
-    console.log(body.clientWidth);
     let start = document.getElementById("startScreen");
     let startButton = document.getElementById("startButton");
     let title = document.getElementById("title");
