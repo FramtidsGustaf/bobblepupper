@@ -1,9 +1,9 @@
 class Game {
   constructor() {
     this.ball = new Ball();
-    this.startScreen(this.autoCreatingBalls, this.ball);
+    this.startScreen(this.autoCreatingBalls, this.autoCreatingSquares, this.ball);
   }
-  startScreen(autoCreatingBalls, ball) {
+  startScreen(autoCreatingBalls, autoCreatingSquares, ball) {
     let start = document.getElementById("startScreen");
     let startButton = document.getElementById("startButton");
     let title = document.getElementById("title");
@@ -18,6 +18,9 @@ class Game {
         setTimeout(() => {
           start.remove();
         }, 500);
+        setTimeout(() => {
+          autoCreatingSquares(ball);
+        }, 60000);
       }
     });
   }
@@ -25,6 +28,13 @@ class Game {
     setInterval(() => {
       if (document.getElementById("playField")) {
         ball.createBall();
+      }
+    }, Math.floor(Math.random() * 1000) + 500);
+  }
+  autoCreatingSquares(ball) {
+    setInterval(() => {
+      if (document.getElementById("playField")) {
+        ball.createSquare();
       }
     }, Math.floor(Math.random() * 1000) + 500);
   }

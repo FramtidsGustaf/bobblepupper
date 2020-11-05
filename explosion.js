@@ -1,14 +1,18 @@
 class Explosion {
   constructor() {}
-  explode(x, y) {
+  explode(x, y, color) {
     let playField = document.getElementById("playField");
     let colorArray = ["#f4b942", "#eff2f1", "#ff3a20", "#ff521b", "#ef2d56"];
     for (let i = 0; i < 50; i++) {
       let element = document.createElement("div");
-      let rndColor = Math.floor(Math.random() * 5);
+      let rndColor = colorArray[Math.floor(Math.random() * 5)];
 
       element.classList.add("particle");
-      element.style.backgroundColor = `${colorArray[rndColor]}`;
+      if (i % 2 === 0) {
+        element.style.backgroundColor = color;
+      } else {
+        element.style.backgroundColor = rndColor;
+      }
       element.style.position = "absolute";
       element.style.top = `${y}px`;
       element.style.left = `${x}px`;
