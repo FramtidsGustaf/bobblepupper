@@ -1,4 +1,4 @@
-$bigTextColor: #90be6d;
+$bigTextColor: #eac435;
 $smallTextAndBgColor: #1e1e24;
 
 * {
@@ -55,7 +55,8 @@ body {
     user-select: none;
   }
   #startScreen {
-    background-color: #d36135;
+    background-color: #fb4d3d;
+    border-radius: 5px;
     grid-column: 2;
     grid-row: 2;
     display: flex;
@@ -69,6 +70,7 @@ body {
       font-size: 10vw;
       color: $bigTextColor;
       user-select: none;
+      text-shadow: 0.5vw 0.5vw $smallTextAndBgColor;
     }
     p {
       font-family: "Lekton", sans-serif;

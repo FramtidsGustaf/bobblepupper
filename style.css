@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Fredoka One", cursive;
-  color: #90be6d;
+  color: #eac435;
   font-size: 8vw;
   user-select: none;
   z-index: -1;
@@ -56,7 +56,8 @@ body {
   user-select: none;
 }
 #playField #startScreen {
-  background-color: #d36135;
+  background-color: #fb4d3d;
+  border-radius: 5px;
   grid-column: 2;
   grid-row: 2;
   display: flex;
@@ -69,8 +70,9 @@ body {
 #playField #startScreen h1 {
   font-family: "Fredoka One", cursive;
   font-size: 10vw;
-  color: #90be6d;
+  color: #eac435;
   user-select: none;
+  text-shadow: 0.5vw 0.5vw #1e1e24;
 }
 #playField #startScreen p {
   font-family: "Lekton", sans-serif;
@@ -82,7 +84,7 @@ body {
 #playField #startScreen #startButton {
   font-family: "Lekton", sans-serif;
   font-weight: bold;
-  background-color: #90be6d;
+  background-color: #eac435;
   min-height: 10%;
   min-width: 20%;
   padding: 2%;
@@ -95,7 +97,7 @@ body {
 }
 #playField #startScreen #startButton:hover {
   background-color: #1e1e24;
-  color: #90be6d;
+  color: #eac435;
 }
 
 .particle {
@@ -105,7 +107,7 @@ body {
 }
 
 .titleColor {
-  color: #90be6d;
+  color: #eac435;
 }
 
 .invisible {
