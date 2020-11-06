@@ -1,5 +1,6 @@
 $bigTextColor: #eac435;
 $smallTextAndBgColor: #1e1e24;
+$shadowColor: #0e0e11;
 
 * {
   margin: 0;
@@ -25,7 +26,7 @@ body {
   grid-template-rows: 80vh 15vh 5vh;
   h1 {
     padding-left: 1%;
-    text-shadow: 0.5vw 0.5vw #0e0e11;
+    text-shadow: 0.5vw 0.5vw $shadowColor;
     grid-column: 1;
     grid-row: 1;
     justify-self: center;
@@ -59,7 +60,7 @@ body {
     grid-row: 2;
     user-select: none;
     font-family: "Fredoka One", cursive;
-    color: #0e0e11;
+    color: $shadowColor;
     font-size: 30vw;
     display: flex;
     align-items: center;
@@ -89,7 +90,7 @@ body {
       font-size: 10vw;
       color: $bigTextColor;
       user-select: none;
-      text-shadow: 0.5vw 0.5vw #0e0e11;
+      text-shadow: 0.5vw 0.5vw $shadowColor;
     }
     p {
       font-family: "Lekton", sans-serif;
@@ -112,9 +113,11 @@ body {
       cursor: pointer;
       border-radius: 5px;
       color: $smallTextAndBgColor;
+      box-shadow: 0.5vw 0.5vw $shadowColor;
       &:hover {
         background-color: $smallTextAndBgColor;
         color: $bigTextColor;
+        box-shadow: 0.5vw 0.5vw $bigTextColor;
       }
       span {
         user-select: none;

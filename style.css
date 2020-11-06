@@ -114,10 +114,12 @@ body {
   cursor: pointer;
   border-radius: 5px;
   color: #1e1e24;
+  box-shadow: 0.5vw 0.5vw #0e0e11;
 }
 #playField #startScreen #startButton:hover {
   background-color: #1e1e24;
   color: #eac435;
+  box-shadow: 0.5vw 0.5vw #eac435;
 }
 #playField #startScreen #startButton span {
   user-select: none;
