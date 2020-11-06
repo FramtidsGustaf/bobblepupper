@@ -2,6 +2,7 @@ class Game {
   constructor() {
     this.ball = new Ball();
     this.startScreen(this.autoCreatingBalls, this.autoCreatingSquares, this.ball);
+    this.tryAgain();
   }
   startScreen(autoCreatingBalls, autoCreatingSquares, ball) {
     let start = document.getElementById("startScreen");
@@ -45,5 +46,11 @@ class Game {
         ball.createSquare();
       }
     }, Math.floor(Math.random() * 1000) + 500);
+  }
+  tryAgain() {
+    let endScreen = document.getElementById("endScreen");
+    endScreen.addEventListener("click", () => {
+      location.reload();
+    });
   }
 }
