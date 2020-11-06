@@ -17,6 +17,7 @@ class Ball {
     ball.style.height = `${rnd}px`;
     ball.style.width = `${rnd}px`;
     ball.style.borderRadius = `50%`;
+    ball.style.boxShadow = `-1rem 1rem 1rem #0e0e11`;
     ball.style.backgroundColor = rndColor;
     ball.style.transition = `all ${rndSpeed}s linear`;
     ball.style.position = `absolute`;
@@ -57,6 +58,7 @@ class Ball {
     square.style.height = `${rnd}px`;
     square.style.width = `${rnd}px`;
     square.style.borderRadius = `10px`;
+    square.style.boxShadow = `-1rem 1rem 1rem #0e0e11`;
     square.style.backgroundColor = rndColor;
     square.style.transition = `all ${rndSpeed}s linear`;
     square.style.position = `absolute`;
