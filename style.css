@@ -13,7 +13,6 @@ body {
   top: 0px;
   left: 0px;
   height: 100vh;
-  width: 100%;
   background-color: #1e1e24;
   display: flex;
   justify-content: center;
@@ -26,10 +25,15 @@ body {
 }
 #endScreen h1 {
   padding-left: 1%;
+  text-shadow: 0.5vw 0.5vw #0e0e11;
+}
+#endScreen p {
+  text-shadow: 0.5vw 0.5vw #0e0e11;
 }
 
 #playField {
   height: 100vh;
+  width: 100vw;
   background-color: #1e1e24;
   display: grid;
   grid-template-columns: 1fr 50% 1fr;
@@ -72,7 +76,7 @@ body {
   font-size: 10vw;
   color: #eac435;
   user-select: none;
-  text-shadow: 0.5vw 0.5vw #1e1e24;
+  text-shadow: 0.5vw 0.5vw #0e0e11;
 }
 #playField #startScreen p {
   font-family: "Lekton", sans-serif;
