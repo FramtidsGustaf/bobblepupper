@@ -14,21 +14,36 @@ body {
   left: 0px;
   height: 100vh;
   background-color: #1e1e24;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: "Fredoka One", cursive;
   color: #eac435;
   font-size: 8vw;
   user-select: none;
   z-index: -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 80vh 15vh 5vh;
 }
 #endScreen h1 {
   padding-left: 1%;
   text-shadow: 0.5vw 0.5vw #0e0e11;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
 }
-#endScreen p {
+#endScreen #endScore {
   text-shadow: 0.5vw 0.5vw #0e0e11;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+}
+#endScreen #pressAnywhere {
+  text-shadow: 0.5vw 0.5vw #0e0e11;
+  grid-column: 1/3;
+  grid-row: 2;
+  font-size: 6vw;
+  text-align: center;
 }
 
 #playField {
